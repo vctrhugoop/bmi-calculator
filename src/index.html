@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -8,8 +10,46 @@
       content="Free Body Mass Index calculator gives out the BMI value and categorizes BMI based on provided information from WHO and CDC for both adults and children."
     />
     <title>BMI Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <main class="main-container">
+      <img
+        src="./public/image-content.svg"
+        alt="Four men representing types of male body shape."
+      />
+      <span>Enter your details below</span>
+      <section class="form-container">
+        <form class="form-wrapper">
+          <label for="height">Height</label>
+          <input type="text" name="height" id="height" />
+          <label for="weight">Weight</label>
+          <input type="text" name="weight" id="weight" />
+          <button>Calculate</button>
+        </form>
+      </section>
+      <section class="datails">
+        <span>Your BMI is...</span>
+        <h1>23.4</h1>
+      </section>
+    </main>
+    <footer class="footer-conteiner">
+      <span
+        >created by<a
+          href="https://github.com/vctrhugoop"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Victor Oliveira</a
+        ></span
+      >
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
