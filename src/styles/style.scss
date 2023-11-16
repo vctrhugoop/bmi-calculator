@@ -82,15 +82,16 @@ body {
     }
 
     .details {
-      display: none;
       @include mixins.content;
+      display: none;
+      text-align: center;
 
-      span {
+      .bmi-statement {
         @include mixins.span;
       }
 
-      h1 {
-        text-align: center;
+      .bmi-result {
+        margin-top: 16px;
         font-size: 48px;
         color: variables.$color-emerald-500;
       }
