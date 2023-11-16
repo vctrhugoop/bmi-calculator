@@ -108,19 +108,20 @@ body .main-container .details.show {
   display: block;
 }
 body .main-container .details {
-  display: none;
   width: 100%;
   padding: 28px;
   background-color: #132d46;
   border-radius: 8px;
+  display: none;
+  text-align: center;
 }
-body .main-container .details span {
+body .main-container .details .bmi-statement {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
 }
-body .main-container .details h1 {
-  text-align: center;
+body .main-container .details .bmi-result {
+  margin-top: 16px;
   font-size: 48px;
   color: #01c38d;
 }
