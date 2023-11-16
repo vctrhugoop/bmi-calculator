@@ -10,6 +10,7 @@
       content="Free Body Mass Index calculator gives out the BMI value and categorizes BMI based on provided information from WHO and CDC for both adults and children."
     />
     <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -21,18 +22,20 @@
   </head>
   <body>
     <main class="main-container">
-      <img
-        src="./public/image-content.svg"
-        alt="Four men representing types of male body shape."
-      />
-      <span>Enter your details below</span>
       <section class="form-container">
+        <span>Enter your details below</span>
         <form class="form-wrapper">
-          <label for="height">Height</label>
-          <input type="text" name="height" id="height" />
-          <label for="weight">Weight</label>
-          <input type="text" name="weight" id="weight" />
-          <button>Calculate</button>
+          <div class="input-wrapper">
+            <label for="height">Height</label>
+            <input type="text" name="height" id="height" placeholder="cm" />
+            <i class="fa-solid fa-arrows-up-down"></i>
+          </div>
+          <div class="input-wrapper">
+            <label for="weight">Weight</label>
+            <input type="text" name="weight" id="weight" placeholder="kg" />
+            <i class="fa-solid fa-weight-hanging"></i>
+          </div>
+          <button class="btn">Calculate</button>
         </form>
       </section>
       <section class="datails">
@@ -42,7 +45,8 @@
     </main>
     <footer class="footer-conteiner">
       <span
-        >created by<a
+        >created by
+        <a
           href="https://github.com/vctrhugoop"
           target="_blank"
           rel="noopener noreferrer"
