@@ -6,8 +6,12 @@
 
 body,
 input,
-button {
+button,
+a {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smooting: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }

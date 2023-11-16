@@ -1,1 +1,124 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+a {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smooting: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: #191e29;
+}
+body .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 340px;
+  width: 100%;
+}
+body .main-container .form-container {
+  width: 100%;
+  padding: 28px;
+  background-color: #132d46;
+  border-radius: 8px;
+}
+body .main-container .form-container span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+body .main-container .form-container .form-wrapper {
+  margin-top: 16px;
+}
+body .main-container .form-container .form-wrapper .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 4px;
+  position: relative;
+  margin: 18px 0;
+}
+body .main-container .form-container .form-wrapper .input-wrapper label {
+  font-size: 14px;
+  opacity: 0.8;
+  color: #ffffff;
+}
+body .main-container .form-container .form-wrapper .input-wrapper input {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #132d46;
+}
+body .main-container .form-container .form-wrapper .input-wrapper input:focus {
+  border: 2px solid #01c38d;
+}
+body .main-container .form-container .form-wrapper i {
+  position: absolute;
+  right: 6%;
+  bottom: 24%;
+  color: #01c38d;
+}
+body .main-container .form-container .form-wrapper .btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  margin-top: 16px;
+  background-color: #01c38d;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+body .main-container .details.show {
+  display: block;
+}
+body .main-container .details {
+  display: none;
+  width: 100%;
+  padding: 28px;
+  background-color: #132d46;
+  border-radius: 8px;
+}
+body .main-container .details span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+body .main-container .details h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #01c38d;
+}
+body .footer-conteiner {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+}
+body .footer-conteiner span {
+  color: #ffffff;
+}
+body .footer-conteiner span a {
+  color: #01c38d;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+@use 'resets';
+@use 'variables';
+@use 'mixins';
+
+body {
+  @include mixins.flex;
+
+  position: relative;
+
+  height: 100vh;
+
+  background-color: variables.$color-slate-900;
+
+  .main-container {
+    @include mixins.flex;
+    row-gap: 16px;
+    max-width: 340px;
+    width: 100%;
+
+    .form-container {
+      @include mixins.content;
+
+      span {
+        @include mixins.span;
+      }
+
+      .form-wrapper {
+        margin-top: 16px;
+
+        .input-wrapper {
+          @include mixins.flex;
+          align-items: flex-start;
+          row-gap: 4px;
+          position: relative;
+          margin: 18px 0;
+
+          label {
+            font-size: 14px;
+            opacity: 0.8;
+            color: variables.$color-white-50;
+          }
+
+          input {
+            width: 100%;
+            height: 52px;
+            border-radius: 8px;
+            padding: 0 16px;
+            font-size: 18px;
+            font-weight: 700;
+            color: variables.$color-cyan-900;
+            &:focus {
+              border: 2px solid variables.$color-emerald-500;
+            }
+          }
+        }
+        i {
+          position: absolute;
+          right: 6%;
+          bottom: 24%;
+          color: variables.$color-emerald-500;
+        }
+        .btn {
+          width: 100%;
+          height: 52px;
+          border-radius: 8px;
+          margin-top: 16px;
+          background-color: variables.$color-emerald-500;
+          font-size: 18px;
+          font-weight: 600;
+          color: variables.$color-white-50;
+        }
+      }
+    }
+
+    .details.show {
+      display: block;
+    }
+
+    .details {
+      display: none;
+      @include mixins.content;
+
+      span {
+        @include mixins.span;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        color: variables.$color-emerald-500;
+      }
+    }
+  }
+
+  .footer-conteiner {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+
+    span {
+      color: variables.$color-white-50;
+
+      a {
+        color: variables.$color-emerald-500;
+      }
+    }
+  }
+}

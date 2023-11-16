@@ -1,0 +1,21 @@
+@use 'variables';
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin content {
+  width: 100%;
+  padding: 28px;
+  background-color: variables.$color-cyan-900;
+  border-radius: 8px;
+}
+
+@mixin span {
+  font-size: 18px;
+  font-weight: 600;
+  color: variables.$color-white-50;
+}
