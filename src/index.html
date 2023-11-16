@@ -27,12 +27,28 @@
         <form class="form-wrapper">
           <div class="input-wrapper">
             <label for="height">Height</label>
-            <input type="number" name="height" id="height" placeholder="cm" />
+            <input
+              type="number"
+              min="0"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              name="height"
+              id="height"
+              placeholder="cm"
+            />
             <i class="fa-solid fa-arrows-up-down"></i>
           </div>
           <div class="input-wrapper">
             <label for="weight">Weight</label>
-            <input type="number" name="weight" id="weight" placeholder="kg" />
+            <input
+              type="number"
+              min="0"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              name="weight"
+              id="weight"
+              placeholder="kg"
+            />
             <i class="fa-solid fa-weight-hanging"></i>
           </div>
           <button class="btn">Calculate</button>
