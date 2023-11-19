@@ -3,12 +3,13 @@ const heightInput = document.querySelector('#height');
 const weightInput = document.querySelector('#weight');
 const bmiResult = document.querySelector('.bmi-result');
 const bmiStatement = document.querySelector('.bmi-statement');
-const details = document.querySelector('.details');
+const details = document.querySelector('dialog');
+const modalClose = document.querySelector('dialog .modal-close button');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  details.classList.add('show');
+  details.showModal();
 
   let height = heightInput.value;
   let weight = weightInput.value;
@@ -30,3 +31,7 @@ form.addEventListener('submit', e => {
   heightInput.value = '';
   weightInput.value = '';
 });
+
+modalClose.onclick = () => {
+  details.close();
+};
