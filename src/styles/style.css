@@ -141,7 +141,7 @@ body dialog .modal-close button {
   cursor: pointer;
 }
 body dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 body .footer-conteiner {
   font-size: 14px;
